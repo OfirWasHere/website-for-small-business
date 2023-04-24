@@ -51,7 +51,7 @@ function Navbar(props: NavbarProps): JSX.Element {
             {/* Route Link */}
             <NavLink to={item.path} className="DrawerNavbar">
               <ListItemButton>
-                <ListItemText primary={item.routeName} />
+                <ListItemText primary={item.routeName} sx={{ textAlign: "center" }}/>
               </ListItemButton>
             </NavLink>
           </ListItem>

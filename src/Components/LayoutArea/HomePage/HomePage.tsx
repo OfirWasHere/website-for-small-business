@@ -1,9 +1,12 @@
-import React from 'react'
+import { t } from "i18next";
+import React from "react";
 
 function HomePage() {
   return (
-    <div>HomePage</div>
-  )
+    <div>
+      HomePage
+    </div>
+  );
 }
 
-export default HomePage
+export default HomePage;

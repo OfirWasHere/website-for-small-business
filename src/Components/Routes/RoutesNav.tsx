@@ -1,14 +1,14 @@
-// Routes for the navbar including names
-//TODO add translation
+import { t } from "i18next";
+
 const RoutesNav = [
     {
         path:"/contact-us",
-        routeName:"Contact us",
+        routeName:t("NavbarStrings.contactUs"),
     },
     {
         path:"/home",
-        routeName:"home"
+        routeName:t("NavbarStrings.home"),
     },
 ]
-
+// // { lng: "en" }
 export default RoutesNav;
