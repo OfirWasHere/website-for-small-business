@@ -1,18 +1,18 @@
 import React from "react";
 import "./PageNotFound.css";
-import { useRouteError } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import RoutesNav from "../../Routes/RoutesNav";
+import { t } from "i18next";
 
 function PageNotFound() {
-  const error = useRouteError();
+  // const error = useRouteError();
 
   return (
     <div className="PageNotFound">
       <Navbar routes={RoutesNav} />
 
-      <h1>Oops!</h1>
-      <p>Sorry, an unexpected error has occurred.</p>
+      <h1>{t("PageNotFoundStrings.lostWarning")}</h1>
+      <p>{t("PageNotFoundStrings.lostMessage")}</p>
     </div>
   );
 }

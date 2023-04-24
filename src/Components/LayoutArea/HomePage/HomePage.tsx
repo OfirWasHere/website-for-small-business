@@ -1,10 +1,9 @@
 import { t } from "i18next";
-import React from "react";
 
 function HomePage() {
   return (
     <div>
-      HomePage
+      {t("HomePageStrings.test")}
     </div>
   );
 }

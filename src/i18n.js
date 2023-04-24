@@ -30,7 +30,6 @@ i18n
         translation: Hebrew
       }
     }
-
   });
 
 export default i18n;

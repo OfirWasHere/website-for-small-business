@@ -121,23 +121,3 @@ function Navbar(props: NavbarProps): JSX.Element {
 }
 
 export default Navbar;
-
-// https://codesandbox.io/s/d847to?file=/demo.tsx:707-846
-
-// https://mui.com/material-ui/react-app-bar/#responsive-app-bar-with-drawer
-
-// function Navbar(props: NavbarProps): JSX.Element {
-//   return (
-//     <div className="Navbar">
-//       <ul>
-//         {props.routes.map((e, index) => (
-//           <li key={index}>
-//             <NavLink to={e.path} className="link">
-//               {e.routeName}
-//             </NavLink>
-//           </li>
-//         ))}
-//       </ul>
-//     </div>
-//   );
-// }
