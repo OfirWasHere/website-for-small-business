@@ -1,26 +1,10 @@
-/* .Navbar > ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
+.Navbar {
+    padding-bottom: 70px;
 }
 
-.Navbar > ul > li {
-    float: left;
-}
-
-.Navbar > ul > li > .link {
-    display: block;
-    color: white;
+.DrawerNavbar {
+    width: 100%;
     text-align: center;
-    padding: 16px;
     text-decoration: none;
+    color: black;
 }
-
-.Navbar > ul > li .link:hover {
-    background-color: #111111;
-}
-.link > ul > li .active-link {
-    color: blue;
-} */

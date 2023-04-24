@@ -3,7 +3,7 @@
 const RoutesNav = [
     {
         path:"/contact-us",
-        routeName:"Contact us"
+        routeName:"Contact us",
     },
     {
         path:"/home",
