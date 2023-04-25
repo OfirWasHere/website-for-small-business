@@ -1,0 +1,12 @@
+.Carousel>.CarouselComponent {
+    width: 100vw;
+    margin: auto;
+}
+
+.CarouselImages {
+    width: 100vw;
+    height: 50vh;
+    object-fit: cover;
+    border: 1px solid;
+    backdrop-filter: blur(50px);
+}

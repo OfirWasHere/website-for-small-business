@@ -1,4 +1,5 @@
 export const SideOfScreen = "ltr"
+export const currentLanguage = "English"
 
 export const NavbarStrings = {
     home: "Home",
@@ -11,5 +12,7 @@ export const PageNotFoundStrings = {
 }
 
 export const HomePageStrings = {
-    test: "Test"
+    test: "Test",
+    welcomeTitle:"Welcome to our website, we will be happy to serve you!"
+
 }

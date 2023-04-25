@@ -1,0 +1,7 @@
+.HomePage {
+    padding-top: 64px;
+}
+
+.HomePage> .CarouselEffect {
+    /* filter: brightness(60%); */
+}

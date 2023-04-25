@@ -1,4 +1,5 @@
 export const SideOfScreen = "rtl"
+export const currentLanguage = "עברית"
 
 export const NavbarStrings = {
     home:"דף הבית",
@@ -11,5 +12,6 @@ export const PageNotFoundStrings = {
 }
 
 export const HomePageStrings = {
-    test:"בדיקה"
+    test:"בדיקה",
+    welcomeTitle:"ברוכה הבאה לאתר שלנו!"
 }

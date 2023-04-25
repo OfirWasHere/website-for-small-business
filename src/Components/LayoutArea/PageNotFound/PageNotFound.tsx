@@ -5,8 +5,6 @@ import RoutesNav from "../../Routes/RoutesNav";
 import { t } from "i18next";
 
 function PageNotFound() {
-  // const error = useRouteError();
-
   return (
     <div className="PageNotFound">
       <Navbar routes={RoutesNav} />

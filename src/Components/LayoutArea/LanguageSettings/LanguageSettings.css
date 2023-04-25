@@ -1,0 +1,7 @@
+.LanguageSettings {
+    display: block;
+    position: absolute;
+    z-index: 10;
+    padding-left: 20px;
+    padding-top: 80px;
+}
