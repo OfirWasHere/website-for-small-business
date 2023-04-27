@@ -12,8 +12,8 @@ function Carousel(props: CarouselProps) {
         autoPlay
         stopAutoPlayOnHover
         animation="slide"
-        duration={500}
-        interval={10000}
+        duration={1200}
+        interval={15000}
         height={"50vh"}
         swipe
         navButtonsProps={{

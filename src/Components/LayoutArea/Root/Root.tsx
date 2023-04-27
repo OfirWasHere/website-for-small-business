@@ -2,18 +2,19 @@ import { Outlet, useOutlet } from "react-router-dom";
 import RoutesNav from "../../Routes/RoutesNav";
 import Navbar from "../Navbar/Navbar";
 import HomePage from "../HomePage/HomePage";
-import { t } from "i18next";
-import LanguageSettings from "../LanguageSettings/LanguageSettings";
+import LanguagePicker from "../LanguagePicker/LanguagePicker";
 import languages from "../../Strings/Languages";
+import { useTranslation } from "react-i18next";
 
 export default function Root() {
+  const { t } = useTranslation();
   const outlet = useOutlet();
 
   return (
     // Fragment to render 2 components or more
     <>
       <Navbar routes={RoutesNav} />
-      <LanguageSettings languageList={languages}/>
+      <LanguagePicker languageList={languages}/>
 
       <div dir={t("SideOfScreen")}>
         { outlet ? <Outlet /> : <HomePage />}

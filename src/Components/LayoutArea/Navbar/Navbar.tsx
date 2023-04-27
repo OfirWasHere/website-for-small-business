@@ -18,16 +18,18 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
+import { useTranslation } from "react-i18next";
 
 interface NavbarProps {
   routes: RoutesModel[];
 }
 
 // Drawer content width:
-const drawerWidth = 240;
+const drawerWidth = 340;
 
 function Navbar(props: NavbarProps): JSX.Element {
   // Nav Items:
+  const { t } = useTranslation();
   const navItems = props.routes;
 
   // Mobile view toggler
@@ -41,17 +43,24 @@ function Navbar(props: NavbarProps): JSX.Element {
   const drawer = (
     <Box>
       {/* Nav logo or Name */}
-      <Typography sx={{ textAlign: "center", fontSize: "2rem" }}>
-        Company Name
+      <Typography sx={{ m: 2, textAlign: "center", fontSize: "2rem" }}>
+        Company Name / LOGO
       </Typography>
       <Divider />
       <List>
         {navItems.map((item, index) => (
           <ListItem key={index} sx={{ textAlign: "center" }}>
             {/* Route Link */}
-            <NavLink to={item.path} className="DrawerNavbar">
+            <NavLink
+              to={item.path}
+              className="DrawerNavbar"
+              onClick={() => setMobileOpen(false)}
+            >
               <ListItemButton>
-                <ListItemText primary={item.routeName} sx={{ textAlign: "center" }}/>
+                <ListItemText
+                  primary={t(item.routeName)}
+                  sx={{ textAlign: "center" }}
+                />
               </ListItemButton>
             </NavLink>
           </ListItem>
@@ -74,7 +83,7 @@ function Navbar(props: NavbarProps): JSX.Element {
               sx={{ mr: 2, display: { sm: "none" } }}
             >
               {/* Menu burger icon */}
-              <MenuIcon sx={{ fontSize: 40 }} />
+              <MenuIcon sx={{ fontSize: 50 }} />
             </IconButton>
             {/* Logo  */}
             <Typography
@@ -82,13 +91,13 @@ function Navbar(props: NavbarProps): JSX.Element {
               component="div"
               sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
             >
-              LOGO
+              Company Name / LOGO
             </Typography>
             {/* Displayed items */}
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               {navItems.map((item, index) => (
                 <NavLink to={item.path} key={index}>
-                  <Button sx={{ color: "#fff" }}>{item.routeName}</Button>
+                  <Button sx={{ color: "#fff" }}>{t(item.routeName)}</Button>
                 </NavLink>
               ))}
             </Box>

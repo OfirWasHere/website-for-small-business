@@ -12,21 +12,22 @@ import image6 from "../../../Assets/Images/image6.jpg";
 const tempImages = [image1, image2, image3, image4, image5, image6];
 
 function HomePage() {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div className="HomePage">
       <div className="CarouselEffect">
         <Carousel images={tempImages} />
       </div>
-      <div>
+      <div className="HeroText">
         <h1>{t("HomePageStrings.welcomeTitle")}</h1>
-        <h1>Our Biggest Goal!</h1>
-        <h1>
+        <h3>Our Biggest Goal!</h3>
+        <h3>
           It is very important to us to satisfy our customers in our best way
           and to provide the best service.
-        </h1>
+        </h3>
       </div>
+      {/* add about us */}
     </div>
   );
 }

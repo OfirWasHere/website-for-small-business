@@ -9,14 +9,6 @@ const languages: LanguageModel[] = [
     lang: "עיברית",
     value: "he",
   },
-  {
-    lang: "Español",
-    value: "es",
-  },
-  {
-    lang: "Français",
-    value: "fr",
-  },
   // add more languages as needed
 ];
 

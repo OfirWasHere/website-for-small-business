@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./LanguageSettings.css";
+import "./LanguagePicker.css";
 import {
   FormControl,
   MenuItem,
@@ -14,7 +14,7 @@ interface LanguageProps {
   languageList: LanguageModel[];
 }
 
-function LanguageSettings(props: LanguageProps) {
+function LanguagePicker(props: LanguageProps) {
 
   const [lang, setLang] = useState(i18next.language);
 
@@ -36,4 +36,4 @@ function LanguageSettings(props: LanguageProps) {
   );
 }
 
-export default LanguageSettings;
+export default LanguagePicker;

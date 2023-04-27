@@ -1,14 +1,16 @@
 import { t } from "i18next";
+import RoutesModel from "../Models/RoutesModel";
 
-const RoutesNav = [
+const RoutesNav: RoutesModel[] = [
+
     {
         path:"/contact-us",
-        routeName:t("NavbarStrings.contactUs"),
+        routeName:"NavbarStrings.contactUs",
     },
     {
         path:"/home",
-        routeName:t("NavbarStrings.home"),
+        routeName:"NavbarStrings.home",
     },
 ]
-// // { lng: "en" }
+
 export default RoutesNav;
