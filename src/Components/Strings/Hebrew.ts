@@ -15,7 +15,26 @@ export const HomePageStrings = {
     welcomeTitle: "ברוכה הבאה לאתר שלנו.",
     welcomeGoal: "הגולים הכי גדולים שלנו",
     welcomeInfo: `חשוב לנו מאוד לספק את הלקוחות שלנו בצורה הטובה ביותר ולהעניק את השירות הטוב ביותר.`,
+    aBitAboutUS: `קצת עליינו.`,
 }
+
+
+export const AboutDataStrings = {
+    cardOne: {
+        cardTitle: "הזמן שלך חשוב לנו!",
+        cardDescription: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. `,
+    },
+
+    cardTwo:{
+        cardTitle: "אנחנו נעשה הכול כדי להשיג את היעד שלך",
+        cardDescription: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. `,
+    },
+    cardThree:{
+        cardTitle: "אנחנו מעריכים את הלקוחות שלנו",
+        cardDescription: `"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. `,
+    }
+}
+
 export const Testimonials = {
     who:"",
     jobTitle:"",

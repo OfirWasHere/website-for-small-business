@@ -2,30 +2,26 @@ import AboutCardModel from "../Models/cardModel";
 import customersImage from "../../Assets/Images/Card-images/image1.jpg"
 import handShakeImage from "../../Assets/Images/Card-images/image2.jpg"
 import clockImage from "../../Assets/Images/Card-images/image3.jpg"
-import { AboutDataStrings } from "./English";
 
 export const AboutData:AboutCardModel[] = [
     {
-      title: AboutDataStrings.cardTitleOne,
-      description: `Lizards are a widespread group of squamate reptiles,
-         with over 6,000 species, ranging across all continents except Antarctica`,
+      title: "AboutDataStrings.cardOne.cardTitle",
+      description: "AboutDataStrings.cardOne.cardDescription",
       image: clockImage,
       imageDesc:customersImage
     },
 
     {
-      title: AboutDataStrings.cardTitleTwo,
-      description: `Lizards are a widespread group of squamate reptiles,
-         with over 6,000 species, ranging across all continents except Antarctica`,
+      title: "AboutDataStrings.cardTwo.cardTitle",
+      description: "AboutDataStrings.cardTwo.cardDescription",
       image: customersImage,
       imageDesc:handShakeImage
 
     },
 
     {
-      title: AboutDataStrings.cardTitleThree,
-      description: `Lizards are a widespread group of squamate reptiles,
-         with over 6,000 species, ranging across all continents except Antarctica`,
+      title: "AboutDataStrings.cardThree.cardTitle",
+      description: "AboutDataStrings.cardThree.cardDescription",
       image: handShakeImage,
       imageDesc:clockImage
     },

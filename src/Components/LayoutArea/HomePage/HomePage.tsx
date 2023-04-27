@@ -29,6 +29,7 @@ function HomePage() {
         <h3>{t("HomePageStrings.welcomeInfo")}</h3>
       </div>
       {/* About Component showcase: */}
+      <div className="aboutUsText">{t("HomePageStrings.aBitAboutUS")}</div>
       <About about={AboutData}/>
       {/* Client Component showcase: */}
       <Clients/>
