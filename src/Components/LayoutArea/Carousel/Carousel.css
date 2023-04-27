@@ -1,6 +1,7 @@
 .Carousel>.CarouselComponent {
     width: 100vw;
     margin: auto;
+    background-color: rgb(200, 222, 223);
 }
 
 .CarouselImages {

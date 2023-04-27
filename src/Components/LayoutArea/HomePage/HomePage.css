@@ -4,7 +4,7 @@
 
 .HomePage > .HeroText{
     text-align: center;
-    position: fixed;
+    position: absolute;
     z-index: 10;
     height: auto;
     width: 70%;
@@ -45,13 +45,21 @@
     .HomePage > .HeroText > h1 {
         font-size: 30px;
     }
-
   }
 
 
-
-
-
+  @media only screen and (max-width: 530px) {
+    .HomePage  >.HeroText {
+        padding: 10px;
+        margin-top: 140px;
+    }
+    .HomePage > .HeroText > h3 {
+        font-size: 20px;
+    }
+    .HomePage > .HeroText > h1 {
+        font-size: 30px;
+    }
+  }
 
 
 

@@ -4,12 +4,12 @@ import RoutesModel from "../Models/RoutesModel";
 const RoutesNav: RoutesModel[] = [
 
     {
-        path:"/contact-us",
-        routeName:"NavbarStrings.contactUs",
-    },
-    {
         path:"/home",
         routeName:"NavbarStrings.home",
+    },
+    {
+        path:"/contact-us",
+        routeName:"NavbarStrings.contactUs",
     },
 ]
 

@@ -24,7 +24,7 @@ function LanguagePicker(props: LanguageProps) {
   };
 
   return (
-    <div className="LanguageSettings">
+    <div className="LanguagePicker">
       <FormControl>
         <Select value={lang} label="lang" onChange={handleChange}>
           {props.languageList.map((e, index) => (

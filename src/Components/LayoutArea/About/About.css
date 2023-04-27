@@ -1,0 +1,10 @@
+.About{
+    background-color: rgb(200, 222, 223);
+    padding: 50px;
+}
+
+.About .Card {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}

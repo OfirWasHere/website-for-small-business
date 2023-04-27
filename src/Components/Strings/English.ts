@@ -12,7 +12,14 @@ export const PageNotFoundStrings = {
 }
 
 export const HomePageStrings = {
-    test: "Test",
-    welcomeTitle:"Welcome to our website, we will be happy to serve you!"
+    welcomeTitle:"Welcome to our website.",
+    welcomeGoal: "Our Biggest Goal!",
+    welcomeInfo: `It is very important to us to satisfy our customers in the best possible way and provide the best service.`,
+}
 
+
+export const AboutDataStrings = {
+    cardTitleOne:"Your Time is important to us!",
+    cardTitleTwo:"We will Do our best to satasfy you",
+    cardTitleThree:"We Value our customers",
 }

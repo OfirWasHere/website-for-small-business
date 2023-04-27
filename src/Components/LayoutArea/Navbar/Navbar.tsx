@@ -25,7 +25,7 @@ interface NavbarProps {
 }
 
 // Drawer content width:
-const drawerWidth = 340;
+const drawerWidth = 250;
 
 function Navbar(props: NavbarProps): JSX.Element {
   // Nav Items:
