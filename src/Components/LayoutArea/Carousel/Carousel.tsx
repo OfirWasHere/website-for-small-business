@@ -11,7 +11,7 @@ function Carousel(props: CarouselProps) {
         className="CarouselComponent"
         autoPlay
         stopAutoPlayOnHover
-        animation="slide"
+        animation="fade"
         duration={1200}
         interval={15000}
         height={"50vh"}
@@ -36,7 +36,3 @@ function Carousel(props: CarouselProps) {
 }
 
 export default Carousel;
-
-// {props.images.map((e, index) =>
-//     <img src={e} key={index}/>
-// )}

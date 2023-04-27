@@ -1,0 +1,12 @@
+.Clients {
+    text-align: center;
+    padding: 30px;
+}
+
+.ClientsLogoPaddingTop {
+    padding-top: 50px;
+}
+
+.ClientLogo {
+    max-width: 100px;
+}

@@ -9,7 +9,8 @@ import image5 from "../../../Assets/Images/Carousel-Images/image5.jpg";
 import image6 from "../../../Assets/Images/Carousel-Images/image6.jpg";
 import About from "../About/About";
 import { AboutData } from "../../Strings/AboutData";
-import Clients from "../Clients/Clients";
+import { clientData } from "../../Strings/ClientData";
+import Clients from "../Clients/Clients"
 
 // TEMP!! // ADD BACKEND!!
 const tempImages = [image1, image2, image3, image4, image5, image6];
@@ -32,9 +33,13 @@ function HomePage() {
       <div className="aboutUsText">{t("HomePageStrings.aBitAboutUS")}</div>
       <About about={AboutData}/>
       {/* Client Component showcase: */}
-      <Clients/>
+      <Clients client={clientData}/>
+      
     </div>
   );
 }
 
 export default HomePage;
+
+
+// אז למה אתם מחכים צרו קשר עכשיו ונשמח לעמוד לשירותים
