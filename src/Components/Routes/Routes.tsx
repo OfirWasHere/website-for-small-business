@@ -1,6 +1,6 @@
 import React from "react";
 import PageNotFound from "../LayoutArea/PageNotFound/PageNotFound";
-import ContactUS from "../LayoutArea/ContactUs/ContactUs";
+import ContactUsPage from "../LayoutArea/ContactUsPage/ContactUsPage";
 import HomePage from "../LayoutArea/HomePage/HomePage";
 import Root from "../LayoutArea/Root/Root";
 
@@ -14,7 +14,7 @@ const Routes = [
       // the url to the component
       {
         path: "contact-us",
-        element: <ContactUS />,
+        element: <ContactUsPage />,
       },
       {
         path: "home",

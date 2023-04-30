@@ -7,10 +7,13 @@ import image3 from "../../../Assets/Images/Carousel-Images/image3.jpg";
 import image4 from "../../../Assets/Images/Carousel-Images/image4.jpg";
 import image5 from "../../../Assets/Images/Carousel-Images/image5.jpg";
 import image6 from "../../../Assets/Images/Carousel-Images/image6.jpg";
-import About from "../About/About";
+import About from "../Goals/Goals";
 import { AboutData } from "../../Strings/AboutData";
 import { clientData } from "../../Strings/ClientData";
-import Clients from "../Clients/Clients"
+import Clients from "../Clients/Clients";
+import GetInContactSection from "../GetInContact/GetInContactSection";
+import { Box } from "@mui/material";
+import Trademark from "../Trademark/Trademark";
 
 // TEMP!! // ADD BACKEND!!
 const tempImages = [image1, image2, image3, image4, image5, image6];
@@ -29,17 +32,29 @@ function HomePage() {
         <h3>{t("HomePageStrings.welcomeGoal")}</h3>
         <h3>{t("HomePageStrings.welcomeInfo")}</h3>
       </div>
+
       {/* About Component showcase: */}
-      <div className="aboutUsText">{t("HomePageStrings.aBitAboutUS")}</div>
-      <About about={AboutData}/>
+      <hr />
+      <div className="aboutUsText">
+        <Box>{t("HomePageStrings.aBitAboutUS")}</Box>
+      </div>
+
+      <About about={AboutData} />
       {/* Client Component showcase: */}
-      <Clients client={clientData}/>
+
+      <Clients client={clientData} />
+      <hr />
+
+      {/* Intrested?, not sure? contact us for any questions we'll be happy to provide you with an answer */}
+      <GetInContactSection />
+      {/* testimonials add rating per person */}
       
+      {/* Footer here*/}
+      <Trademark />
     </div>
   );
 }
 
 export default HomePage;
-
 
 // אז למה אתם מחכים צרו קשר עכשיו ונשמח לעמוד לשירותים

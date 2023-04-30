@@ -1,0 +1,22 @@
+.GetInContactSection {
+    margin: auto;
+    width: 100%;
+    padding: 30px;
+    background-color:rgb(44, 116, 179);
+    display: flex;
+    justify-content: center;
+}
+
+.GetInContactSection > div > .HighlightText {
+    color: rgb(255, 255, 255);
+    display: inline;
+}
+
+.GetInContactSection > div > .HighlightText > p{
+    font-size: 20px;
+}
+.GetInContactSection > div > .HighlightText > p > .LinkButton {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(31, 15, 255);
+}

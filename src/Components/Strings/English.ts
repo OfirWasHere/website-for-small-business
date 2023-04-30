@@ -15,7 +15,7 @@ export const HomePageStrings = {
     welcomeTitle: "Welcome to our website.",
     welcomeGoal: "Our Biggest Goal!",
     welcomeInfo: `It is very important to us to satisfy our customers in the best possible way and provide the best service.`,
-    aBitAboutUS: `A little bit about us.`,
+    aBitAboutUS: `Why should you work with us.`,
 }
 
 
@@ -35,6 +35,16 @@ export const AboutDataStrings = {
     }
 }
 
+export const GetInContactHomePage = {
+    interested:"Interested?, not sure?",
+    contactUsForQuestions:"Contact us for any questions we'll be happy to provide you with an answer",
+    phone:"Phone",
+    email:"Email",
+    leaveYourDetails:"or leave your details",
+    here:"here",
+    contactAsSoonAsPossible:"and we'll get in contact as soon as possible "
+}
+
 export const Testimonials = {
     who:"",
     jobTitle:"",
@@ -42,3 +52,6 @@ export const Testimonials = {
     experienceRating:"",
     testimonialDesc:""
 }
+
+export const ClientString = "our clients"
+export const TradeMarkString = "All Rights Reserved Ⓒ - Ofir Doron"

@@ -5,6 +5,7 @@ import HomePage from "../HomePage/HomePage";
 import LanguagePicker from "../LanguagePicker/LanguagePicker";
 import languages from "../../Strings/Languages";
 import { useTranslation } from "react-i18next";
+import Trademark from "../Trademark/Trademark";
 
 export default function Root() {
   const { t } = useTranslation();
@@ -19,8 +20,6 @@ export default function Root() {
       <div dir={t("SideOfScreen")}>
         { outlet ? <Outlet /> : <HomePage />}
       </div>
-
-      {/* Footer here*/}
     </>
   );
 }

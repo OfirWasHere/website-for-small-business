@@ -1,5 +1,5 @@
 import React from "react";
-import "./About.css";
+import "./Goals.css";
 import {
   Box,
   Card,

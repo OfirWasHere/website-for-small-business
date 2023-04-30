@@ -1,5 +1,17 @@
+
 html, body, * {
   margin: 0px;
   top: 0;
   padding: 0px;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 350;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+
+hr {
+  border: 1.5px solid rgb(10, 38, 71);
 }
