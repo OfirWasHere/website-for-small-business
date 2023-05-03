@@ -1,8 +1,8 @@
 import React from "react";
 
 class AboutCardModel {
-    title: string;
-    icon:string;
+    public title: string;
+    public icon:string;
 }
 
 export default AboutCardModel;

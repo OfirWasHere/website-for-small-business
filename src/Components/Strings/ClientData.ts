@@ -1,41 +1,41 @@
 import clientDataModel from "../Models/clientDataModel";
-import amirLogo from "../../Assets/Images/Client-Logos/amirLogo.png"
+import tempLogo from "../../Assets/Images/Client-Logos/Logo.jpg"
 
 export const clientData:clientDataModel[] = [
     {
-        icon:amirLogo,
+        icon:tempLogo,
         title:"Amir_Il_Logo"
     },
     {
-        icon:amirLogo,
+        icon:tempLogo,
         title:"Amir_Il_Logo"
     },
     {
-        icon:amirLogo,
+        icon:tempLogo,
         title:"Amir_Il_Logo"
     },
     {
-        icon:amirLogo,
+        icon:tempLogo,
         title:"Amir_Il_Logo"
     },
     {
-        icon:amirLogo,
+        icon:tempLogo,
         title:"Amir_Il_Logo"
     },
     {
-        icon:amirLogo,
+        icon:tempLogo,
         title:"Amir_Il_Logo"
     },
     {
-        icon:amirLogo,
+        icon:tempLogo,
         title:"Amir_Il_Logo"
     },
     {
-        icon:amirLogo,
+        icon:tempLogo,
         title:"Amir_Il_Logo"
     },
     {
-        icon:amirLogo,
+        icon:tempLogo,
         title:"Amir_Il_Logo"
     },
 ]

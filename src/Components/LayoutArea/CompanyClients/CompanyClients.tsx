@@ -1,5 +1,5 @@
 import React from "react";
-import "./Clients.css";
+import "./CompanyClients.css";
 import clientDataModel from "../../Models/clientDataModel";
 import { Box, Grid } from "@mui/material";
 import { useTranslation } from "react-i18next";
@@ -8,11 +8,11 @@ interface Clients {
   client: clientDataModel[];
 }
 
-function Clients(props: Clients) {
+function CompanyClients(props: Clients) {
   const { t } = useTranslation();
 
   return (
-    <div className="Clients">
+    <div className="CompanyClients">
       <h1>{t("ClientString")}</h1>
       <Box sx={{ flexGrow: 1 }}>
         <Grid container spacing={1} justifyContent={"center"}>
@@ -27,4 +27,4 @@ function Clients(props: Clients) {
   );
 }
 
-export default Clients;
+export default CompanyClients;

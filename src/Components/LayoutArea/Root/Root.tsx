@@ -20,6 +20,8 @@ export default function Root() {
       <div dir={t("SideOfScreen")}>
         { outlet ? <Outlet /> : <HomePage />}
       </div>
+      {/* Footer here*/}
+      <Trademark />
     </>
   );
 }

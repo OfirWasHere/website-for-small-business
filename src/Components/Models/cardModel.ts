@@ -1,10 +1,10 @@
 import React from "react";
 
 class AboutCardModel {
-    title: string;
-    description: string;
-    image:string;
-    imageDesc:string
+    public title: string;
+    public description: string;
+    public image:string;
+    public imageDesc:string
 }
 
 export default AboutCardModel;

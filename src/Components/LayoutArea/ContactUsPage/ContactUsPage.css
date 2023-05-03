@@ -1,0 +1,56 @@
+ .ContactUsPage {
+     padding-top: 250px;
+     padding-bottom: 150px;
+     width: 100%;
+ }
+
+ .ContactUsPage>form {
+     padding: 40px;
+     border: 1px solid;
+     width: 550px;
+     margin: auto;
+ }
+
+ .FormTitleText {
+     text-align: center;
+     padding-top: 20px;
+ }
+
+ .FormContactText {
+     text-align: center;
+     padding-top: 20px;
+     padding-bottom: 40px;
+ }
+
+ .TextEmailBox {
+     padding-top: 20px;
+     /* padding-right: 21px; */
+ }
+
+ .ButtonGroupForm {
+     /* padding-right: 20px; */
+ }
+
+ .formTextFieldArea {
+     width: 100%;
+     border-radius: 5px;
+     margin-bottom: 10px;
+     font-size: 24px;
+ }
+
+ @media only screen and (max-width: 520px) {
+     .ContactUsPage {
+         padding-top: 150px;
+         padding-bottom: 50px;
+     }
+
+     .ContactUsPage>form {
+         width: auto;
+         padding: 20px;
+         margin: auto 10px;
+     }
+
+     .formTextFieldArea {
+         width: 100%;
+     }
+ }

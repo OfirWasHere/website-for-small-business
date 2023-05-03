@@ -10,10 +10,9 @@ import image6 from "../../../Assets/Images/Carousel-Images/image6.jpg";
 import About from "../Goals/Goals";
 import { AboutData } from "../../Strings/AboutData";
 import { clientData } from "../../Strings/ClientData";
-import Clients from "../Clients/Clients";
+import CompanyClients from "../CompanyClients/CompanyClients";
 import GetInContactSection from "../GetInContact/GetInContactSection";
 import { Box } from "@mui/material";
-import Trademark from "../Trademark/Trademark";
 
 // TEMP!! // ADD BACKEND!!
 const tempImages = [image1, image2, image3, image4, image5, image6];
@@ -42,15 +41,12 @@ function HomePage() {
       <About about={AboutData} />
       {/* Client Component showcase: */}
 
-      <Clients client={clientData} />
+      <CompanyClients client={clientData} />
       <hr />
 
       {/* Intrested?, not sure? contact us for any questions we'll be happy to provide you with an answer */}
       <GetInContactSection />
       {/* testimonials add rating per person */}
-      
-      {/* Footer here*/}
-      <Trademark />
     </div>
   );
 }

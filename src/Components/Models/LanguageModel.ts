@@ -1,8 +1,8 @@
 import React from "react";
 
 class LanguageModel {
-    lang: string;
-    value: string;
+    public lang: string;
+    public value: string;
 }
 
 export default LanguageModel;
