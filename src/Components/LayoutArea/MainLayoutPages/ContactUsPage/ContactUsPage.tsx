@@ -1,5 +1,5 @@
 import React from "react";
-import Trademark from "../Trademark/Trademark";
+import Trademark from "../../Trademark/Trademark";
 import { useForm } from "react-hook-form";
 import "./ContactUsPage.css";
 import {
@@ -13,9 +13,9 @@ import {
 } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
-import FormValidationModel from "../../Models/formValidationModel";
-import dataService from "../../../Services/DataService";
-import { toastCSS } from "../ToastNotify/ToastNotify";
+import FormValidationModel from "../../../Models/formValidationModel";
+import dataService from "../../../../Services/DataService";
+import { toastCSS } from "../../ToastNotify/ToastNotify";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";

@@ -1,8 +1,8 @@
 import React from "react";
-import PageNotFound from "../LayoutArea/PageNotFound/PageNotFound";
-import ContactUsPage from "../LayoutArea/ContactUsPage/ContactUsPage";
-import HomePage from "../LayoutArea/HomePage/HomePage";
-import Root from "../LayoutArea/Root/Root";
+import PageNotFound from "../LayoutArea/MainLayoutPages/PageNotFound/PageNotFound";
+import ContactUsPage from "../LayoutArea/MainLayoutPages/ContactUsPage/ContactUsPage";
+import HomePage from "../LayoutArea/MainLayoutPages/HomePage/HomePage";
+import Root from "../LayoutArea/MainLayoutPages/Root/Root";
 
 const Routes = [
   {

@@ -1,13 +1,13 @@
 import { Outlet, useOutlet } from "react-router-dom";
-import RoutesNav from "../../Routes/RoutesNav";
-import Navbar from "../Navbar/Navbar";
+import RoutesNav from "../../../Routes/RoutesNav";
+import Navbar from "../../Navbar/Navbar";
 import HomePage from "../HomePage/HomePage";
-import LanguagePicker from "../LanguagePicker/LanguagePicker";
-import languages from "../../Strings/Languages";
+import LanguagePicker from "../../LanguagePicker/LanguagePicker";
+import languages from "../../../Strings/Languages";
 import { useTranslation } from "react-i18next";
-import Trademark from "../Trademark/Trademark";
+import Trademark from "../../Trademark/Trademark";
 import { ToastContainer } from "react-toastify";
-import { toastContainerConfig } from "../ToastNotify/ToastNotify";
+import { toastContainerConfig } from "../../ToastNotify/ToastNotify";
 
 export default function Root() {
   const { t } = useTranslation();
