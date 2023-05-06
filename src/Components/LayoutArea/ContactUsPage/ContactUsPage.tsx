@@ -14,17 +14,25 @@ import {
 import SendIcon from "@mui/icons-material/Send";
 import DeleteForeverIcon from "@mui/icons-material/DeleteForever";
 import FormValidationModel from "../../Models/formValidationModel";
+import dataService from "../../../Services/DataService";
+import { toastCSS } from "../ToastNotify/ToastNotify";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router-dom";
+
+function ContactUsPage(): JSX.Element {
+  const { register, handleSubmit, formState, reset } = useForm<FormValidationModel>();
+  const navigate = useNavigate()
 
 
-function ContactUsPage():JSX.Element {
-  const { register, handleSubmit, formState } = useForm<FormValidationModel>();
-
-  async function send(params:FormValidationModel) {
+  async function send(params: FormValidationModel) {
     try {
-      console.log(params);
-    } catch (error:any) {
+      dataService.sendEmailService(params);
+      toast.success("Message was sent!", toastCSS);
+      navigate("/home")
+    } catch (error: any) {
       console.log(error.message);
-      
+      toast.error(error.message, toastCSS);
     }
   }
 
@@ -45,37 +53,75 @@ function ContactUsPage():JSX.Element {
             {/* First Name */}
             <Grid item xs={12} sm={6} md={6}>
               <Typography>First name</Typography>
-              <TextField variant="outlined" fullWidth type="text" {...register("firstName", FormValidationModel.firstNameValidation)} required/>
+              <TextField
+                variant="outlined"
+                fullWidth
+                type="text"
+                {...register(
+                  "firstName",
+                  FormValidationModel.firstNameValidation
+                )}
+                required
+              />
             </Grid>
             {/* Last Name */}
             <Grid item xs={12} sm={6} md={6}>
               <Typography>Last name</Typography>
-              <TextField variant="outlined" fullWidth type="text" {...register("lastName", FormValidationModel.lastNameValidation)} required/>
+              <TextField
+                variant="outlined"
+                fullWidth
+                type="text"
+                {...register(
+                  "lastName",
+                  FormValidationModel.lastNameValidation
+                )}
+                required
+              />
             </Grid>
             {/* Email */}
             <Grid item xs={12} sm={12} md={12} className="TextEmailBox">
               <Typography>Email</Typography>
-              <TextField fullWidth variant="outlined" {...register("email", FormValidationModel.emailValidation) } required/>
+              <TextField
+                fullWidth
+                variant="outlined"
+                {...register("email", FormValidationModel.emailValidation)}
+                required
+              />
             </Grid>
             {/* Phone */}
             <Grid item xs={12} sm={12} md={12} className="TextEmailBox">
               <Typography>Phone</Typography>
-              <TextField fullWidth variant="outlined" type="phone" {...register("phone", FormValidationModel.PhoneValidation)} required />
+              <TextField
+                fullWidth
+                variant="outlined"
+                type="phone"
+                {...register("phone", FormValidationModel.PhoneValidation)}
+                required
+              />
             </Grid>
             {/* Message */}
             <Grid item xs={12} sm={12} md={12} className="TextEmailBox">
               <Typography>Message</Typography>
-              <TextareaAutosize minRows={4} className="formTextFieldArea" {...register("message", FormValidationModel.messageValidation)} />
+              <TextareaAutosize
+                minRows={4}
+                className="formTextFieldArea"
+                {...register("message", FormValidationModel.messageValidation)}
+              />
             </Grid>
             <ButtonGroup fullWidth className="ButtonGroupForm">
               <Button
                 className="ButtonForm"
                 variant="contained"
                 startIcon={<SendIcon />}
+                type="submit"
               >
                 Submit
               </Button>
-              <Button variant="contained" startIcon={<DeleteForeverIcon />}>
+              <Button
+                variant="contained"
+                startIcon={<DeleteForeverIcon />}
+                onClick={() => reset()}
+              >
                 Clear
               </Button>
             </ButtonGroup>
