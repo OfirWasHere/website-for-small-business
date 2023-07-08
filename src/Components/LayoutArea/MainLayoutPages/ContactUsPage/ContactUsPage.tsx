@@ -1,5 +1,3 @@
-import React from "react";
-import Trademark from "../../Trademark/Trademark";
 import { useForm } from "react-hook-form";
 import "./ContactUsPage.css";
 import {
@@ -21,7 +19,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useNavigate } from "react-router-dom";
 
 function ContactUsPage(): JSX.Element {
-  const { register, handleSubmit, formState, reset } = useForm<FormValidationModel>();
+  const { register, handleSubmit, reset } = useForm<FormValidationModel>();
   const navigate = useNavigate()
 
 
