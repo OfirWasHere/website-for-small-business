@@ -12,10 +12,10 @@ export const PageNotFoundStrings = {
 }
 
 export const HomePageStrings = {
-    welcomeTitle: "ברוכה הבאה לאתר שלנו.",
-    welcomeGoal: "הגולים הכי גדולים שלנו",
-    welcomeInfo: `חשוב לנו מאוד לספק את הלקוחות שלנו בצורה הטובה ביותר ולהעניק את השירות הטוב ביותר.`,
-    aBitAboutUS: `למה כדאי לך לעבוד איתנו.`,
+    welcomeTitle: "בני דורון.",
+    welcomeGoal: "שירותי הובלה ועבודות מנוף",
+    welcomeInfo: `054-239-1650`,
+    aBitAboutUS: `שירותי הובלה לכל הארץ`,
 }
 
 

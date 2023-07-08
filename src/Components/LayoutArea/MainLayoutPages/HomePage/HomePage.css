@@ -1,6 +1,7 @@
 .HomePage {
     padding-top: 64px;
-    background-color: rgb(67, 151, 224);
+    background-color: rgb(242,242,242);
+    /* background-color: rgb(67, 151, 224); */
 }
 
 .HomePage>.HeroText {
@@ -10,7 +11,7 @@
     height: auto;
     width: 70%;
     color: rgb(255, 255, 255);
-    background-color: rgba(0, 0, 0, 0.276);
+    background-color: rgba(0, 0, 0, 0.402);
     left: 50%;
     transform: translateX(-50%);
     margin-top: 100px;
@@ -35,6 +36,10 @@
 
 .HomePage>.CarouselEffect {
     /* filter: brightness(80%); */
+}
+
+h1, h2, h3 {
+    padding-bottom: 15px;
 }
 
 @media only screen and (max-width: 920px) {
