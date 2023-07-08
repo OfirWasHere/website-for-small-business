@@ -12,9 +12,9 @@ export const PageNotFoundStrings = {
 }
 
 export const HomePageStrings = {
-    welcomeTitle: "Welcome to our website.",
-    welcomeGoal: "Our Biggest Goal!",
-    welcomeInfo: `It is very important to us to satisfy our customers in the best possible way and provide the best service.`,
+    welcomeTitle: "Beni Doron.",
+    welcomeGoal: "Transport services and crane works",
+    welcomeInfo: `054-239-1650`,
     aBitAboutUS: `Why should you work with us.`,
 }
 

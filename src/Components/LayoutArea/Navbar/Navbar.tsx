@@ -44,7 +44,7 @@ function Navbar(props: NavbarProps): JSX.Element {
     <Box>
       {/* Nav logo or Name */}
       <Typography sx={{ m: 2, textAlign: "center", fontSize: "2rem" }}>
-        Company Name / LOGO
+        Beni Doron
       </Typography>
       <Divider />
       <List>
@@ -91,7 +91,7 @@ function Navbar(props: NavbarProps): JSX.Element {
               component="div"
               sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
             >
-              Company Name / LOGO
+              Beni Doron
             </Typography>
             {/* Displayed items */}
             <Box sx={{ display: { xs: "none", sm: "block" } }}>

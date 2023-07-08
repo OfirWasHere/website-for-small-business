@@ -1,12 +1,12 @@
 import "./HomePage.css";
 import Carousel from "../../Carousel/Carousel";
 import { useTranslation } from "react-i18next";
-import image1 from "../../../../Assets/Images/Carousel-Images/image1.jpg";
-import image2 from "../../../../Assets/Images/Carousel-Images/image2.jpg";
-import image3 from "../../../../Assets/Images/Carousel-Images/image3.jpg";
-import image4 from "../../../../Assets/Images/Carousel-Images/image4.jpg";
-import image5 from "../../../../Assets/Images/Carousel-Images/image5.jpg";
-import image6 from "../../../../Assets/Images/Carousel-Images/image6.jpg";
+import image1 from "../../../../Assets/Images/Carousel-Images/image1.jpeg";
+import image2 from "../../../../Assets/Images/Carousel-Images/image2.jpeg";
+import image3 from "../../../../Assets/Images/Carousel-Images/image3.jpeg";
+import image4 from "../../../../Assets/Images/Carousel-Images/image4.jpeg";
+import image5 from "../../../../Assets/Images/Carousel-Images/image5.jpeg";
+import image6 from "../../../../Assets/Images/Carousel-Images/image6.jpeg";
 import About from "../../Goals/Goals";
 import { AboutData } from "../../../Strings/AboutData";
 import { clientData } from "../../../Strings/ClientData";
@@ -14,9 +14,7 @@ import CompanyClients from "../../CompanyClients/CompanyClients";
 import GetInContactSection from "../../GetInContact/GetInContactSection";
 import { Box } from "@mui/material";
 
-// TEMP!! // ADD BACKEND!!
 const tempImages = [image1, image2, image3, image4, image5, image6];
-// add backend soon
 
 function HomePage() {
   const { t } = useTranslation();
@@ -29,7 +27,7 @@ function HomePage() {
       <div className="HeroText">
         <h1>{t("HomePageStrings.welcomeTitle")}</h1>
         <h3>{t("HomePageStrings.welcomeGoal")}</h3>
-        <h3>{t("HomePageStrings.welcomeInfo")}</h3>
+        <h1>{t("HomePageStrings.welcomeInfo")}</h1>
       </div>
 
       {/* About Component showcase: */}
@@ -52,5 +50,3 @@ function HomePage() {
 }
 
 export default HomePage;
-
-// אז למה אתם מחכים צרו קשר עכשיו ונשמח לעמוד לשירותים
