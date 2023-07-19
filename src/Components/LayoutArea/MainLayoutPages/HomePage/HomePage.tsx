@@ -7,7 +7,7 @@ import image3 from "../../../../Assets/Images/Carousel-Images/image3.jpeg";
 import image4 from "../../../../Assets/Images/Carousel-Images/image4.jpeg";
 import image5 from "../../../../Assets/Images/Carousel-Images/image5.jpeg";
 import image6 from "../../../../Assets/Images/Carousel-Images/image6.jpeg";
-import About from "../../Goals/Goals";
+import About from "../../About/About";
 import { AboutData } from "../../../Strings/AboutData";
 import { clientData } from "../../../Strings/ClientData";
 import CompanyClients from "../../CompanyClients/CompanyClients";
@@ -31,7 +31,7 @@ function HomePage() {
       </div>
 
       {/* About Component showcase: */}
-      <hr />
+      {/* <hr /> */}
       <div className="aboutUsText">
         <Box>{t("HomePageStrings.aBitAboutUS")}</Box>
       </div>
@@ -40,7 +40,7 @@ function HomePage() {
       {/* Client Component showcase: */}
 
       <CompanyClients client={clientData} />
-      <hr />
+      {/* <hr /> */}
 
       {/* Intrested?, not sure? contact us for any questions we'll be happy to provide you with an answer */}
       <GetInContactSection />
