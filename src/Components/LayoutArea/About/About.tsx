@@ -1,5 +1,4 @@
-import React from "react";
-import "./Goals.css";
+import "./About.css";
 import {
   Box,
   Card,
